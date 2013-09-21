@@ -1,0 +1,29 @@
+{
+  "name": "soundcloud-resolve",
+  "version": "0.0.0",
+  "description": "Takes a SoundCloud URL and retrieves the relevant JSON data for that resource from the SoundCloud API",
+  "main": "index.js",
+  "browser": "browser.js",
+  "dependencies": {
+    "xhr": "~1.2.3",
+    "request": "~2.27.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/soundcloud-resolve.git"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hughsk/soundcloud-resolve/issues"
+  },
+  "keywords": [
+    "soundcloud",
+    "audio",
+    "data",
+    "api",
+    "browserify"
+  ]
+}
