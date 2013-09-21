@@ -1,6 +1,6 @@
 {
   "name": "soundcloud-resolve",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Takes a SoundCloud URL and retrieves the relevant JSON data for that resource from the SoundCloud API",
   "main": "index.js",
   "browser": "browser.js",
