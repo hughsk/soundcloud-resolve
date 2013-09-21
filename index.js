@@ -14,11 +14,3 @@ function resolve(id, goal, callback) {
     return callback(null, body)
   })
 }
-
-resolve(
-    'ded451c6d8f9ff1c62f72523f49dab68'
-  , 'https://soundcloud.com/arcanekids/sets/neo-l-a'
-  , function(err, data) {
-    console.log(err || data)
-  }
-)
