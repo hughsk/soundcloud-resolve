@@ -5,11 +5,19 @@
   "main": "index.js",
   "browser": "browser.js",
   "dependencies": {
-    "xhr": "~1.2.3",
-    "request": "~2.27.0"
+    "request": "~2.27.0",
+    "xhr": "~1.2.3"
   },
-  "devDependencies": {},
-  "scripts": {},
+  "devDependencies": {
+    "browserify": "^5.11.0",
+    "tap-spec": "^0.2.1",
+    "beefy": "^2.1.1",
+    "tape": "^2.14.0"
+  },
+  "scripts": {
+    "test": "node test.js | tap-spec",
+    "test-browser": "beefy test.js --open"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/hughsk/soundcloud-resolve.git"

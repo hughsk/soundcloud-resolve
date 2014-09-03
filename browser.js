@@ -22,6 +22,10 @@ function resolve(id, goal, callback) {
     if (body.errors) return callback(new Error(
       body.errors[0].error_message
     ))
-    return callback(null, body)
+
+    var stream_url = body.kind === 'track'
+      && body.stream_url + '?client_id=' + id
+
+    return callback(null, body, stream_url)
   })
 }
