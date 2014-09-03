@@ -14,4 +14,6 @@ SoundCloud API. Works with [node](http://nodejs.org/) and
 Takes a `client_id` and the resource's permalink `url`, calling
 `callback(err, json, stream_url)` when complete.
 
-The JSON data returned
+The JSON data returned is dependant on the type of resource you're
+resolving, see the [SoundCloud API reference](https://developers.soundcloud.com/docs/api/reference)
+for more details.
