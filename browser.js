@@ -4,7 +4,7 @@ var xhr = require('xhr')
 module.exports = resolve
 
 function resolve(id, goal, callback) {
-  var uri = 'http://api.soundcloud.com/resolve.json?' + qs.stringify({
+  var uri = 'https://api.soundcloud.com/resolve.json?' + qs.stringify({
       url: goal
     , client_id: id
   })
