@@ -3,7 +3,7 @@ var request = require('request')
 module.exports = resolve
 
 function resolve(id, goal, callback) {
-  request.get('http://api.soundcloud.com/resolve.json', {
+  request.get('https://api.soundcloud.com/resolve.json', {
       qs: { client_id: id, url: goal }
     , json: true
   }, function(err, res, body) {

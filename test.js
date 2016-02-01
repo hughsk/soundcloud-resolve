@@ -3,11 +3,11 @@ var scr  = require('./')
 
 test('[track] modern housing', function(t) {
   scr('ded451c6d8f9ff1c62f72523f49dab68'
-    , 'https://soundcloud.com/dylan_king/modern-housing'
+    , 'https://soundcloud.com/max-richter/5-sarajevo'
     , function(err, data, stream_url) {
       t.ifError(err, 'retrieved without error')
-      t.equal(data.kind, 'track', '.kind === "track"')
-      t.equal(data.title, 'Modern Housing', '.title === "Modern Housing"')
+      t.equal(data.kind, 'track', '.kind matches')
+      t.equal(data.title, 'Sarajevo', '.title matches')
       t.equal(typeof stream_url, 'string', 'has a stream_url')
       t.end()
     })
