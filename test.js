@@ -1,7 +1,7 @@
 var test = require('tape')
 var scr  = require('./')
 
-test('[track] modern housing', function(t) {
+test('[track] sarajevo', function(t) {
   scr('ded451c6d8f9ff1c62f72523f49dab68'
     , 'https://soundcloud.com/max-richter/5-sarajevo'
     , function(err, data, stream_url) {
